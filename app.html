@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080300">
+<title>OPEN GAP | Markets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+<header>
+<a class="brand" href="index.html">
+<img src="OpenGap.png" alt="">
+<span>OPEN<b>GAP</b></span><small>v0.1</small>
+</a>
+<div class="clock">
+<i></i><b>US MARKET CLOSED</b><em>//</em>
+<time id="clock">--:--:-- ET</time>
+</div>
+<div class="header-actions"><a class="x-link" href="https://x.com/opengapdotfun" target="_blank" rel="noopener noreferrer" aria-label="OpenGap on X">X</a><button id="wallet" class="wallet"><b>[W]</b> CONNECT WALLET</button></div>
+</header>
+<main>
+<section class="hero">
+<div class="kicker">
+<span>SYS://AFTER-HOURS EXECUTION LAYER</span>
+<span>ROBINHOOD CHAIN - 4663</span></div>
+<h1>THE MARKET IS CLOSED.<br><em>THE NEWS ISN'T.</em></h1>
+<p>Trade the next opening move before the bell.</p>
+<p>Every market settles against the first valid Chainlink print.</p>
+<div class="actions">
+<a href="#markets">[ENTER] EXPLORE LIVE MARKETS</a>
+<button id="how">[?] HOW IT WORKS</button>
+</div>
+</section>
+<div class="tape"><div>
+<span><b>NVDA</b> NEXT OPEN +3% <i>43c</i></span>
+<span><b>TSLA</b> NEXT OPEN $455 <i>61c</i></span>
+<span><b>AAPL</b> GAP UP <i>54c</i></span>
+<span><b>SPY</b> MONDAY GREEN <i>67c</i></span>
+<span><b>OPEN INTEREST</b> <i>$1,284,903</i></span>
+</div></div>
+<section class="terminal" id="markets">
+<aside class="panel">
+<div class="panel-head">
+<span><b>01</b> LIVE MARKETS</span><i>8 OPEN</i>
+</div>
+<div class="tabs">
+<button class="active" data-filter="all">ALL</button>
+<button data-filter="earnings">EARNINGS</button>
+<button data-filter="weekend">WEEKEND</button>
+</div>
+<div id="market-list"></div>
+<button class="view-all">VIEW ALL MARKETS <span>-></span></button>
+</aside>
+<section class="panel">
+<div class="panel-head">
+<span><b>02</b> EXECUTION TERMINAL</span>
+<i class="good">* ORACLE VERIFIED</i>
+</div>
+<div class="trade-body">
+<div class="market-title">
+<div class="asset" id="asset">NV</div>
+<div>
+<small><b id="symbol">NVDA</b> / OPEN GAP CONTRACT</small>
+<h2 id="question">Will NVDA open 3% higher?</h2>
+</div>
+<button id="star">*</button>
+</div>
+<div class="metrics">
+<div><small>LAST VALID PRINT</small><b id="last">$187.62</b></div>
+<div><small>STRIKE</small><b id="strike">$193.25</b></div>
+<div><small>VOLUME</small><b id="volume">$284,910</b></div>
+<div><small>ORDERS LOCK IN</small><b id="countdown">13:42:08</b></div>
+</div>
+<div class="chart">
+<div><span>MARKET-IMPLIED PROBABILITY</span><i>* LIVE</i></div>
+<svg viewBox="0 0 760 210" preserveAspectRatio="none">
+<defs>
+<linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#ff8a00" stop-opacity=".3"/>
+<stop offset="1" stop-color="#ff8a00" stop-opacity="0"/>
+</linearGradient>
+<filter id="glow">
+<feGaussianBlur stdDeviation="3" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<g class="grid">
+<line x1="0" y1="30" x2="760" y2="30"/>
+<line x1="0" y1="85" x2="760" y2="85"/>
+<line x1="0" y1="140" x2="760" y2="140"/>
+<line x1="0" y1="195" x2="760" y2="195"/>
+</g>
+<path class="area" d="M0 170C70 160 85 145 130 151
+S200 118 250 130S310 100 360 109S430 75 475 91
+S550 65 598 79S670 46 710 58S745 37 760 41L760 210L0 210Z"/>
+<path class="line" d="M0 170C70 160 85 145 130 151
+S200 118 250 130S310 100 360 109S430 75 475 91
+S550 65 598 79S670 46 710 58S745 37 760 41"/>
+<circle cx="760" cy="41" r="5"/>
+</svg>
+<div class="axis">
+<span>6H AGO</span><span>4H</span><span>2H</span><span>NOW</span>
+</div>
+<strong id="prob">43% <small>UP</small></strong>
+</div>
+<div class="order-zone">
+<div class="sides">
+<button class="side active" data-side="UP">
+<span>BUY UP</span><b id="up">43c</b><small>OPENS ABOVE STRIKE</small>
+</button>
+<button class="side" data-side="DOWN">
+<span>BUY DOWN</span><b id="down">57c</b><small>OPENS BELOW STRIKE</small>
+</button>
+</div>
+<div class="ticket">
+<label>AMOUNT <span>USDG BALANCE: <b id="balance">0.00</b></span></label>
+<div class="amount">
+<span>$</span><input id="amount" value="100"><button id="max">MAX</button>
+</div>
+<div class="quick">
+<button data-n="25">+$25</button>
+<button data-n="50">+$50</button>
+<button data-n="100">+$100</button>
+<button data-n="500">+$500</button>
+</div>
+<div class="summary">
+<div><small>AVG. PRICE</small><b id="avg">43.0c</b></div>
+<div><small>POTENTIAL PAYOUT</small><b id="payout">$232.56</b></div>
+<div><small>FEE</small><b id="fee">$0.50</b></div>
+</div>
+<button class="order" id="order">
+<b>PLACE UP ORDER</b><small>CONNECT WALLET TO EXECUTE</small>
+</button>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="lower">
+<div class="panel">
+<div class="panel-head">
+<span><b>03</b> SIGNAL FEED</span><i>UPDATED 08 SEC AGO</i>
+</div>
+<div class="events">
+<article>
+<time>21:08</time><i>NEWS</i>
+<div><b>NVIDIA</b><p>Board approves an additional $25B share repurchase.</p></div>
+<em>+ HIGH</em>
+</article>
+<article>
+<time>20:44</time><i>FLOW</i>
+<div><b>NVDA / UP</b><p>0x71F2 placed a $12,500 order at 41c.</p></div>
+<em>WHALE</em>
+</article>
+<article>
+<time>19:31</time><i>8-K</i>
+<div><b>TESLA</b><p>New filing detected. Probability moved +6.2%.</p></div>
+<em>+ MED</em>
+</article>
+</div>
+</div>
+<div class="panel">
+<div class="panel-head">
+<span><b>04</b> NETWORK STATUS</span><i class="good">* OPERATIONAL</i>
+</div>
+<div class="network">
+<div><span>24H VOLUME</span><b>$842.6K</b><small>+18.4%</small></div>
+<div><span>OPEN INTEREST</span><b>$1.28M</b><small>12 MARKETS</small></div>
+<div><span>NEXT SETTLEMENT</span><b>13:42</b><small>US OPEN</small></div>
+<div><span>CHAINLINK FEEDS</span><b>23/23</b><small>HEALTHY</small></div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div><img src="OpenGap.png" alt=""> OPEN GAP PROTOCOL - ROBINHOOD CHAIN</div>
+<nav>
+<a href="#">DOCS</a><a href="#">CONTRACTS</a><a href="#">X / TWITTER</a>
+</nav>
+<span><i></i> SYSTEM ONLINE</span>
+</footer>
+</div>
+<dialog id="guide">
+<button>x</button>
+<small>PROTOCOL://QUICKSTART</small>
+<h2>Trade the next print.</h2>
+<ol>
+<li>
+<span>01</span>
+<div><b>CHOOSE A MARKET</b><p>Pick before orders lock.</p></div>
+</li>
+<li>
+<span>02</span>
+<div><b>TAKE A SIDE</b><p>Buy UP or DOWN with USDG.</p></div>
+</li>
+<li>
+<span>03</span>
+<div><b>SETTLE ONCHAIN</b><p>Chainlink determines the winner.</p></div>
+</li>
+</ol>
+</dialog>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070300">
+  <meta name="description"
+    content="OpenGap is the after-hours market for the next opening move.">
+  <title>OPEN GAP | The market is closed. The news isn't.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=VT323&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#top">
+      <img src="OpenGap.png" alt="">
+      <span>OPEN<b>GAP</b></span>
+      <small>PROTOCOL</small>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#why">WHY</a>
+      <a href="#how">HOW IT WORKS</a>
+      <a href="#markets">MARKETS</a>
+      <a href="#protocol">PROTOCOL</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="x-link" href="https://x.com/opengapdotfun" target="_blank" rel="noopener noreferrer" aria-label="OpenGap on X">X</a>
+      <span class="chain"><i></i> CHAIN 4663</span>
+      <a class="launch small" href="app.html">LAUNCH APP <b>-></b></a>
+      <button class="menu" id="menu" aria-label="Open menu">[=]</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="system-line">
+          <span>AFTER-HOURS MARKET INFRASTRUCTURE</span>
+          <span class="blink">SYSTEM LIVE_</span>
+        </div>
+        <h1>THE MARKET<br>IS CLOSED.<br><em>THE NEWS ISN'T.</em></h1>
+        <p class="hero-lede">
+          Trade the next opening move while the world is still reacting.
+          Fully collateralized markets, settled by the first valid
+          Chainlink print.
+        </p>
+        <div class="hero-actions">
+          <a class="launch" href="app.html">[ENTER] LAUNCH APP <b>-></b></a>
+          <a class="text-link" href="#how">READ THE PROTOCOL <b>+</b></a>
+        </div>
+        <div class="hero-proof">
+          <div><small>SETTLEMENT</small><strong>USDG</strong></div>
+          <div><small>NETWORK</small><strong>ROBINHOOD CHAIN</strong></div>
+          <div><small>ORACLE</small><strong>CHAINLINK</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-terminal" aria-label="Live market preview">
+        <div class="terminal-bar">
+          <span>OPEN_GAP.EXE</span>
+          <span class="terminal-status">* LIVE</span>
+        </div>
+        <div class="terminal-screen">
+          <div class="boot-row">
+            <span>EVENT DETECTED</span><b>NVDA / EARNINGS</b>
+          </div>
+          <div class="boot-row">
+            <span>LAST VALID PRINT</span><b>$187.62</b>
+          </div>
+          <div class="boot-row">
+            <span>NEXT OPEN</span><b id="hero-countdown">13:42:08</b>
+          </div>
+          <div class="gap-viz">
+            <div class="candle close-candle"><i></i></div>
+            <div class="gap-label"><span>?</span><small>THE GAP</small></div>
+            <div class="candle open-candle"><i></i></div>
+          </div>
+          <p>WILL NVDA OPEN 3% HIGHER?</p>
+          <div class="odds-preview">
+            <div><small>UP</small><strong>43c</strong><span>$284.9K VOL</span></div>
+            <div><small>DOWN</small><strong>57c</strong><span>13H 42M LEFT</span></div>
+          </div>
+          <a href="app.html">OPEN MARKET [ENTER]</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div>
+        <span>NVDA <b>43c UP</b></span>
+        <span>TSLA <b>61c UP</b></span>
+        <span>AAPL <b>54c UP</b></span>
+        <span>SPY <b>67c UP</b></span>
+        <span>24H VOLUME <b>$842,600</b></span>
+        <span>NVDA <b>43c UP</b></span>
+        <span>TSLA <b>61c UP</b></span>
+        <span>AAPL <b>54c UP</b></span>
+      </div>
+    </div>
+    <section class="section problem" id="why">
+      <div class="section-label">
+        <span>01</span>
+        <p>THE MISSING MARKET</p>
+      </div>
+      <div class="problem-copy reveal">
+        <p class="overline">THE WINDOW NOBODY OWNS</p>
+        <h2>NEWS MOVES IN<br><em>SECONDS.</em><br>STOCKS WAIT FOR<br><em>THE BELL.</em></h2>
+      </div>
+      <div class="problem-body reveal">
+        <p>
+          Earnings land after close. Deals break on Sunday.
+          Policy shifts overnight. Millions form a view,
+          but the underlying market cannot express it yet.
+        </p>
+        <p>
+          Generic AMMs keep trading against stale inventory.
+          LPs widen out. Users take bad prices.
+          OpenGap turns that dead time into a transparent market.
+        </p>
+        <div class="window-diagram">
+          <div><small>FRI 16:00 ET</small><b>LAST PRINT</b><span>$187.62</span></div>
+          <i></i>
+          <div class="active"><small>NEWS WINDOW</small><b>OPEN GAP</b><span>TRADE NOW</span></div>
+          <i></i>
+          <div><small>MON 09:30 ET</small><b>FIRST PRINT</b><span>SETTLEMENT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="section-label">
+        <span>02</span>
+        <p>HOW IT WORKS</p>
+      </div>
+      <div class="section-intro reveal">
+        <p class="overline">THREE MOVES. ONE OBJECTIVE PRICE.</p>
+        <h2>TAKE A SIDE.<br>LET THE MARKET OPEN.</h2>
+        <p>
+          No committee chooses the result. No one can move the finish line.
+          Every contract is defined before orders open and settles onchain.
+        </p>
+      </div>
+      <div class="steps">
+        <article class="reveal">
+          <span class="step-number">01</span>
+          <div class="step-icon">[ + ]</div>
+          <h3>CHOOSE THE GAP</h3>
+          <p>
+            Browse time-boxed markets tied to earnings, weekends,
+            halts and breaking news.
+          </p>
+          <small>CONTRACT CREATED</small>
+        </article>
+        <article class="reveal">
+          <span class="step-number">02</span>
+          <div class="step-icon">[ ? ]</div>
+          <h3>BUY UP OR DOWN</h3>
+          <p>
+            Commit USDG to the outcome you believe.
+            Every position is fully collateralized.
+          </p>
+          <small>ORDERS LOCK</small>
+        </article>
+        <article class="reveal">
+          <span class="step-number">03</span>
+          <div class="step-icon">[ ! ]</div>
+          <h3>SETTLE AT OPEN</h3>
+          <p>
+            The first eligible Chainlink print resolves the market.
+            Winners claim directly.
+          </p>
+          <small>NO HUMAN ORACLE</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section market-showcase" id="markets">
+      <div class="section-label">
+        <span>03</span>
+        <p>MARKETS NEVER SLEEP</p>
+      </div>
+      <div class="market-heading reveal">
+        <div>
+          <p class="overline">LIVE WINDOWS</p>
+          <h2>EVERY HEADLINE<br>HAS A PRICE.</h2>
+        </div>
+        <a class="text-link" href="app.html">VIEW ALL MARKETS <b>-></b></a>
+      </div>
+      <div class="market-grid">
+        <article class="featured reveal">
+          <div class="card-top">
+            <span class="asset-chip">NV</span>
+            <div><small>NVDA / EARNINGS</small><b>Will NVDA open 3% higher?</b></div>
+            <span class="live-pill">LIVE</span>
+          </div>
+          <div class="mini-chart">
+            <svg viewBox="0 0 600 130" preserveAspectRatio="none">
+              <path class="fill"
+                d="M0 115C70 105 85 90 135 97S210 72 265 80
+                S345 45 405 63S485 35 530 42S570 22 600 28L600 130H0Z"/>
+              <path class="stroke"
+                d="M0 115C70 105 85 90 135 97S210 72 265 80
+                S345 45 405 63S485 35 530 42S570 22 600 28"/>
+            </svg>
+          </div>
+          <div class="market-bottom">
+            <div><small>UP</small><strong>43c</strong></div>
+            <div><small>DOWN</small><strong>57c</strong></div>
+            <div><small>VOLUME</small><strong>$284.9K</strong></div>
+            <a href="app.html">TRADE [ENTER]</a>
+          </div>
+        </article>
+        <article class="market-card reveal">
+          <div><span class="asset-chip">TS</span><small>WEEKEND GAP</small></div>
+          <h3>Will TSLA open above $455?</h3>
+          <div class="market-odds"><strong>61c</strong><span>UP</span></div>
+          <footer><span>$196.2K VOL</span><span>13H 42M</span></footer>
+        </article>
+        <article class="market-card reveal">
+          <div><span class="asset-chip">SP</span><small>MONDAY OPEN</small></div>
+          <h3>Will SPY open green?</h3>
+          <div class="market-odds"><strong>67c</strong><span>UP</span></div>
+          <footer><span>$175.8K VOL</span><span>13H 42M</span></footer>
+        </article>
+      </div>
+    </section>
+    <section class="section moments">
+      <div class="section-label">
+        <span>04</span>
+        <p>BUILT FOR THE MOMENT</p>
+      </div>
+      <div class="moment-grid">
+        <article class="reveal">
+          <small>01 / AFTER THE CALL</small>
+          <h3>EARNINGS<br>NIGHT</h3>
+          <p>
+            Results are out. Guidance changed. The conference call is live.
+            Price the next open while the story unfolds.
+          </p>
+          <div class="moment-time">16:01 ET <span>-></span> 09:30 ET</div>
+        </article>
+        <article class="reveal">
+          <small>02 / THE LONG PAUSE</small>
+          <h3>WEEKEND<br>GAP</h3>
+          <p>
+            Forty-one hours of headlines between Friday close
+            and Monday open. The view does not have to wait.
+          </p>
+          <div class="moment-time">FRIDAY <span>-></span> MONDAY</div>
+        </article>
+        <article class="reveal">
+          <small>03 / PRICE REBOOT</small>
+          <h3>HALT<br>REOPEN</h3>
+          <p>
+            A halted stock reopens into concentrated uncertainty.
+            OpenGap creates a fair, precommitted price window.
+          </p>
+          <div class="moment-time">HALTED <span>-></span> RESUMED</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section protocol" id="protocol">
+      <div class="section-label">
+        <span>05</span>
+        <p>PROTOCOL, NOT A PROMISE</p>
+      </div>
+      <div class="protocol-grid">
+        <div class="protocol-copy reveal">
+          <p class="overline">VERIFIABLE BY DEFAULT</p>
+          <h2>THE RULES LIVE<br>ONCHAIN.</h2>
+          <p>
+            Markets are fully collateralized in USDG.
+            Outcomes use canonical price feeds.
+            Settlement can be called by anyone.
+          </p>
+          <a class="text-link" href="app.html">INSPECT THE APP <b>-></b></a>
+        </div>
+        <div class="specs reveal">
+          <div><span>01</span><p>NETWORK</p><strong>ROBINHOOD CHAIN</strong></div>
+          <div><span>02</span><p>SETTLEMENT ASSET</p><strong>USDG</strong></div>
+          <div><span>03</span><p>PRICE SOURCE</p><strong>CHAINLINK</strong></div>
+          <div><span>04</span><p>COLLATERAL</p><strong>100% FUNDED</strong></div>
+          <div><span>05</span><p>RESOLUTION</p><strong>PERMISSIONLESS</strong></div>
+          <div><span>06</span><p>PROTOCOL FEE</p><strong>0.50%</strong></div>
+        </div>
+      </div>
+      <div class="security-strip reveal">
+        <span>NO LEVERAGE</span>
+        <i></i><span>NO HUMAN RESOLUTION</span>
+        <i></i><span>NO HIDDEN ORDER BOOK</span>
+        <i></i><span>NO CUSTODIAL CLAIM</span>
+      </div>
+    </section>
+
+    <section class="section terminal-story">
+      <div class="section-label">
+        <span>06</span>
+        <p>THE OPENING SEQUENCE</p>
+      </div>
+      <div class="boot-window reveal">
+        <div class="boot-head">
+          <span>OPEN GAP SETTLEMENT CONSOLE</span>
+          <span>BUILD 0.1.4663</span>
+        </div>
+        <div class="boot-body">
+          <p><b>OPENING</b> NVDA-2026-09-11-GAP-3PCT.EXE</p>
+          <p>Checking collateral pool
+            <span>................................</span><em>FUNDED</em></p>
+          <p>Checking order cutoff
+            <span>................................</span><em>LOCKED</em></p>
+          <p>Waiting for eligible Chainlink round
+            <span>...................</span><em class="wait">WAIT</em></p>
+          <div class="progress"><i></i></div>
+          <p class="prompt">NEXT VALID PRINT SETTLES THE MARKET<span>_</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="section faq" id="faq">
+      <div class="section-label">
+        <span>07</span>
+        <p>FREQUENTLY ASKED</p>
+      </div>
+      <div class="faq-layout">
+        <div class="reveal">
+          <p class="overline">READ BEFORE OPEN</p>
+          <h2>GOOD QUESTIONS.<br>HARD RULES.</h2>
+        </div>
+        <div class="questions">
+          <details open class="reveal">
+            <summary>WHAT EXACTLY AM I TRADING?<span>+</span></summary>
+            <p>
+              A fully collateralized outcome contract tied to the
+              next eligible opening print of a supported stock token.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>WHO DECIDES THE WINNER?<span>+</span></summary>
+            <p>
+              The contract reads the predefined Chainlink price feed.
+              No administrator manually chooses an outcome.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>WHAT HAPPENS IF THE FEED DOES NOT PRINT?<span>+</span></summary>
+            <p>
+              The market enters its timeout path and collateral
+              becomes refundable under the market's published rules.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>CAN I LOSE MORE THAN I DEPOSIT?<span>+</span></summary>
+            <p>
+              No. Positions are fully funded. There is no margin
+              and no debt attached to an outcome position.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <img src="OpenGap.png" alt="" class="cta-mark">
+      <p class="overline">THE BELL HAS NOT RUNG YET.</p>
+      <h2>WHAT DO YOU<br>THINK HAPPENS<br><em>AT THE OPEN?</em></h2>
+      <a class="launch large" href="app.html">[ENTER] LAUNCH OPEN GAP <b>-></b></a>
+      <small>USE AT YOUR OWN RISK / MARKETS SHOWN ARE PROTOTYPE DATA</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo footer-logo" href="#top">
+      <img src="OpenGap.png" alt="">
+      <span>OPEN<b>GAP</b></span>
+    </a>
+    <div>
+      <p>THE AFTER-HOURS MARKET FOR THE NEXT OPENING MOVE.</p>
+      <span>BUILT ON ROBINHOOD CHAIN / SETTLED BY CHAINLINK</span>
+    </div>
+    <nav>
+      <a href="#how">PROTOCOL</a>
+      <a href="#faq">FAQ</a>
+      <a href="app.html">APP</a>
+    </nav>
+    <span class="copyright">2026 OPEN GAP / ALL SYSTEMS NOMINAL</span>
+  </footer>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button id="menu-close">[X] CLOSE</button>
+    <a href="#why">WHY</a>
+    <a href="#how">HOW IT WORKS</a>
+    <a href="#markets">MARKETS</a>
+    <a href="#protocol">PROTOCOL</a>
+    <a href="#faq">FAQ</a>
+    <a class="launch" href="app.html">LAUNCH APP -></a>
+  </div>
+  <script src="landing.js"></script>
+</body>
+</html>
