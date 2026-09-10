@@ -274,6 +274,15 @@ button { font:inherit; color:inherit; cursor:pointer; }
   font-weight:500;
   letter-spacing:.08em;
 }
+.ca-box strong a {
+  color:inherit;
+  overflow-wrap:anywhere;
+}
+.ca-box strong a:hover {
+  color:var(--yellow);
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
 .ca-box>span {
   color:var(--yellow);
   font-size:7px;
